@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d5c77a;
+    color: #868686;
+    line-height: 1.6; /* Improves readability */
+}
+
+header {
+    background-color: #5d5858;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+.logo img {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: 50px; /* Ensure width and height are the same for a perfect circle */
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image fits nicely inside the circle */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Experience Section */
+.experience {
+    background: #4A4A4A; /* Black background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(234, 202, 202, 0.5); /* Darker shadow for contrast */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.experience:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+}
+
+.experience h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience li {
+    margin-bottom: 5px;
+}
+
+.experience-photo {
+    max-width: 100%;
+    height: 200px;;
+    border-radius: 5px;
+    padding-left: 40px;
+    transition: transform 0.3s;
+    
+}
+.awards {
+    background-color:#4A4A4A;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.awards h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color:white;
+    box-shadow: 30px 20px 20px rgb(74, 74, 73);
+}
+
+.awards ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.awards li {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.awards li p {
+    margin-top: 5px;
+    font-size: 16px;
+    color:white;
+}
+
+
+/* Skills Section */
+.skills {
+    background:#4A4A4A; /* Black background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 20 20px 30px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.skills:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+}
+
+.skills h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-icon {
+    width: 50px; /* Adjust size for icons */
+    height: 50px; /* Adjust size for icons */
+    margin-right: 15px; /* Space between icon and text */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background:#4A4A4A; /* Black background */
+    color: white; /* White text for contrast */
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.testimonials:hover {
+    transform: scale(1.02); /* Slightly enlarges the card on hover */
+}
+
+.testimonials h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.client-photo {
+    width: 70px; /* Adjust size for client photos */
+    height: 50px; /* Adjust size for client photos */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #211f1f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.social-media-links a {
+    margin: 0 10px;
+}
+
+.social-media-links img {
+    width: 50px; /* Size for social media icons */
+    height: 24px;
+    vertical-align: middle; /* Aligns icons vertically */
+    border-radius: 50%;
+}
+
+.copyright-info {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack links on smaller screens */
+        margin: 10px 0;
+    }
+
+    .skill {
+        flex-direction: column; /* Stack icon and text */
+        align-items: flex-start;
+    }
+} 
